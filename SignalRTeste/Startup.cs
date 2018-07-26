@@ -21,7 +21,7 @@ namespace SignalRTeste
             GlobalHost.DependencyResolver.UseRedis(_redis, 6379, "", "ChatRedis");
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
             app.MapSignalR();
-            GlobalHost.HubPipeline.RequireAuthentication();
+            //GlobalHost.HubPipeline.RequireAuthentication();
         }
     }
 }
